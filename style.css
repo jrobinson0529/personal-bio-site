@@ -95,45 +95,7 @@ h1 {
 #css-logo {
   width: 80px;
 }
-.projects-page {
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  margin: 20em;
-  border: 1px solid red;
-  text-align: center;
-  width: 70%;
-  height: 100%;
-}
-.projects-page h2 {
-  font-size: 3em;
-  margin: 1em;
-  padding: .5em;
-  height: 10%;
-}
-.projects-image {
-  text-align: -webkit-center;
-  font-size: 2em;
-  align-self: center;
-  margin: 5em 0;
-  height: 90%;
-  width: 90%;
-}
-.projects-image img {
-  max-height: 100%;
-  max-width: 100%;
-}
-.projects-image h3 {
-  margin: 1em 0;
-  text-decoration: none;
-  font-size: 1.35em;
-}
-.projects-image p {
-  padding: 1em;
-  margin: 1em 1em;
-  max-width: 50%;
-  font-size: 1em;
-}
+
 .page-footer {
   margin: 5em 0 0 0;
   font-size: 2em;
@@ -149,4 +111,11 @@ h1 {
 .fullPage {
   margin: 10em;
   border: 1px solid red;
+}
+/* Project Cards CSS */
+.projects-page {
+  border: 1px solid red;
+}
+.card {
+  margin: 40em 0;
 }
