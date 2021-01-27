@@ -51,7 +51,7 @@
 
   #### January 27th 2021
 
-  ![Portfolio page](img\progress-january-27-2021.gif)
+  ![Portfolio page](https://github.com/jrobinson0529/personal-bio-site/blob/main/img/progress-january-27-2021.gif)
 
   ##### Contact Me
 
