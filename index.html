@@ -17,12 +17,19 @@
 
   <body>
     <!-- Navigation -->
-    <nav>
-      <h1 class="navbar-myname">Jesse Robinson | Aspiring Web Devoloper</h1>
-      <ul id="navLinks" class="nav-links">
-        <li><a id="navToBio">ABOUT</a></li>
-        <li><a id="navToTechnologies">TECH</a></li>
-        <li><a id="navToProjects">PROJECTS</a></li>
+    <nav class="">
+      <h1 class="navbar-myname navbar-brand">
+        Jesse Robinson | Aspiring Web Devoloper
+      </h1>
+      <ul
+        id="navLinks"
+        class="nav-links d-flex flex-row justify-content-end navbar-nav"
+      >
+        <li><a href="#aboutPage" id="navToBio">ABOUT</a></li>
+        <li><a href="#technologiesPage" id="navToTechnologies">TECH</a></li>
+        <li>
+          <a href="#projects-section-nav-anchor" id="navToProjects">PROJECTS</a>
+        </li>
       </ul>
     </nav>
     <!-- End Navigation -->
@@ -52,26 +59,40 @@
     <div class="technologies-page" class="fullPage" id="technologiesPage">
       <h2>Technologies I Use</h2>
       <!-- JS Logo -->
-      <div class="logo-img-container"><img src="/img/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="JavaScript Logo"></div>
+      <div class="logo-img-container">
+        <img
+          src="/img/javascript-logo-8892AEFCAC-seeklogo.com.png"
+          alt="JavaScript Logo"
+        />
+      </div>
       <!-- HTML5 Logo -->
-      <div class="logo-img-container"><img src="img/240px-HTML5_logo_and_wordmark.svg.png" alt="JavaScript Logo"></div>
+      <div class="logo-img-container">
+        <img
+          src="img/240px-HTML5_logo_and_wordmark.svg.png"
+          alt="JavaScript Logo"
+        />
+      </div>
       <!-- CSS3 Logo -->
-      <div class="logo-img-container" id="css-logo"><img src="img/CSS3_logo_and_wordmark.svg.png" alt="JavaScript Logo"></div>
-       <!-- Git Logo -->
-       <div class="logo-img-container"><img src="img/Git-Icon-1788C.png" alt="JavaScript Logo"></div>
-        <!-- GitHub Logo -->
-      <div class="logo-img-container"><img src="img/GitHub-Mark-120px-plus.png" alt="JavaScript Logo"></div>
-       <!-- VSC Logo -->
-       <div class="logo-img-container"><img src="img/Visual_Studio_Code_1.35_icon.svg" alt="JavaScript Logo"></div>
+      <div class="logo-img-container" id="css-logo">
+        <img src="img/CSS3_logo_and_wordmark.svg.png" alt="JavaScript Logo" />
+      </div>
+      <!-- Git Logo -->
+      <div class="logo-img-container">
+        <img src="img/Git-Icon-1788C.png" alt="JavaScript Logo" />
+      </div>
+      <!-- GitHub Logo -->
+      <div class="logo-img-container">
+        <img src="img/GitHub-Mark-120px-plus.png" alt="JavaScript Logo" />
+      </div>
+      <!-- VSC Logo -->
+      <div class="logo-img-container">
+        <img src="img/Visual_Studio_Code_1.35_icon.svg" alt="JavaScript Logo" />
+      </div>
     </div>
     <!-- PROJECTS PAGE WHERE JS ADDS THEM -->
-    <h2 class="m-5 fs-1">Projects</h2>
+    <h2 class="m-5 fs-1" id="projects-section-nav-anchor">Projects</h2>
+
     <div class="projects-page" id="projectsPage"></div>
-    
-
-
-
-
 
     <!-- End Primary View -->
 
