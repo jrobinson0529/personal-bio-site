@@ -24,13 +24,13 @@ nav {
   font-weight: 400;
 }
 .nav-links {
-  margin: 0 3.75em;
+  margin: 0 5em;
 }
 .nav-links li,
 .nav-links li a {
-  margin: 0 2em;
-  width: fit-content;
-  font-size: 1.45em;
+  font-size: 1.35em;
+  margin: 0em 1em;
+  float: right;
   list-style: none;
   text-decoration: none;
 }
@@ -67,7 +67,7 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   width: 40%;
-  height: auto;
+  height: 500px;
   border: 1px solid red;
 }
 .technologies-page ul {
@@ -75,7 +75,6 @@ h1 {
   list-style: none;
 }
 .technologies-page h2 {
-  font-size: 3em;
   margin: 1em;
   text-align: center;
   width: 100%;
@@ -84,10 +83,10 @@ h1 {
 .logo-img-container {
   display: flex;
   justify-content: center;
-  margin: 4em 2em;
-  width: 125px;
-  height: 125px;
-  flex: 1 0 30%;
+  margin: 2em;
+  width: 100px;
+  height: 100px;
+  flex: 1 0 20%;
 }
 .logo-img-container img {
   width: inherit;
