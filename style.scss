@@ -1,5 +1,13 @@
-$primary-color: rgb(171, 175, 129);
-
+// Color palette start
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #009688;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+// Color palette end
 html {
   height: 100%;
   margin: 0;
