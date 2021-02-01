@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo&family=Share+Tech+Mono&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +21,6 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="">
       <h1 class="navbar-myname navbar-brand">
@@ -35,31 +39,8 @@
     </nav>
     <!-- End Navigation -->
 
-    <!-- Button trigger modal -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Technologies Used</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
     <!-- Primary View -->
     <div class="about-page" class="fullPage" id="aboutPage">
-
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-      </button>
       <!-- <div class="about-page-content-container"> -->
       <h2>About Me</h2>
       <p>
@@ -98,7 +79,10 @@
       </div>
       <!-- CSS3 Logo -->
       <div class="logo-img-container" id="css-logo">
-        <img src="../img/CSS3_logo_and_wordmark.svg.png" alt="JavaScript Logo" />
+        <img
+          src="../img/CSS3_logo_and_wordmark.svg.png"
+          alt="JavaScript Logo"
+        />
       </div>
       <!-- Git Logo -->
       <div class="logo-img-container">
@@ -110,13 +94,19 @@
       </div>
       <!-- VSC Logo -->
       <div class="logo-img-container">
-        <img src="../img/Visual_Studio_Code_1.35_icon.svg" alt="JavaScript Logo" />
+        <img
+          src="../img/Visual_Studio_Code_1.35_icon.svg"
+          alt="JavaScript Logo"
+        />
       </div>
     </div>
     <!-- PROJECTS PAGE WHERE JS ADDS THEM -->
     <h2 class="m-5 fs-1" id="projects-section-nav-anchor">Projects</h2>
 
-    <div class="projects-page" id="projectsPage"></div>
+    <div
+      class="projects-page d-flex justify-content-evenly flex-wrap"
+      id="projectsPage"
+    ></div>
 
     <!-- End Primary View -->
 

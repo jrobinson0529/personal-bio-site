@@ -6,20 +6,32 @@ html {
 }
 
 body {
+  font-family: "Space Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #abaf81;
+  background-color: #455a64;
+  color: #212121;
 }
 
 nav {
+  z-index: 1;
+  background-color: #bdbdbd;
+  color: #ffffff;
   height: 4.25em;
   padding: 0.75em;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #009688;
   width: 100%;
   position: fixed;
   top: 0;
+}
+nav a {
+  color: #cfd8dc;
+}
+nav a:hover {
+  transition: 250ms;
+  color: #009688;
 }
 
 .navbar-myname {
@@ -129,11 +141,54 @@ h4 {
 
 /* Project Cards CSS */
 .projects-page {
-  border: 1px solid red;
+  padding: 10px;
+  width: 90%;
 }
 
 .card {
-  margin: 40em 0;
+  font-family: "Share Tech Mono", monospace;
+  color: #212121;
+  box-shadow: #009688 0px 0px 20px;
+  background-color: #cfd8dc;
+  height: 50rem;
+  margin: 5em;
+  border-radius: 20px;
+}
+.card .card-text {
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  color: #757575;
+}
+.card .card-img-top {
+  height: 33%;
+  width: auto;
+  border: 2px solid #009688;
+  border-radius: 10px;
+}
+.card .foot-container {
+  max-height: 60px;
+}
+.card .btn {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #009688;
+  border-radius: 10px;
+}
+.card .btn:hover {
+  transition: 500ms;
+  background-color: #006d63;
+}
+.card hr {
+  border: 1px #009688 solid;
+}
+.card a {
+  color: #009688;
+  font-weight: 500;
+}
+.card a:hover {
+  transition: 500ms;
+  color: #006d63;
 }
 
 /*# sourceMappingURL=main.css.map */
