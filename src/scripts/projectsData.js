@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     title: "COLORFLIPPER", 
     screenshot: "/img/colorflipper.png", 
@@ -45,12 +45,11 @@ export const projects = [
     githubUrl: "https://github.com/nss-evening-cohort-14/color-flipper-hack-jrobinson0529",
   },
 ];
-const technologiesUsed = [
-  {
-    imgSrc: "/img/javascript-logo-8892AEFCAC-seeklogo.com.png",
-    alt: "JavaScript Logo"
-  }
-];
-export const getProjects = () => {
-  return projects;
-};
+// const technologiesUsed = [
+//   {
+//     imgSrc: "/img/javascript-logo-8892AEFCAC-seeklogo.com.png",
+//     alt: "JavaScript Logo"
+//   }
+// ];
+
+export default projects;

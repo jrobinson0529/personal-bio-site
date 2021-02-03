@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #455a64;
+  background-color: #607d8b;
   color: #212121;
 }
 
@@ -141,8 +141,9 @@ h4 {
 
 /* Project Cards CSS */
 .projects-page {
+  background-color: #455a64;
   padding: 10px;
-  width: 90%;
+  width: 100%;
 }
 
 .card {

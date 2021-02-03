@@ -1,9 +1,4 @@
-// IMPORTS
-import {projects, getProjects} from './projectsData.js';
-
-
-
-// Functions
+import {projects} from "./index.js";
 
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.querySelector(divId);
@@ -11,7 +6,6 @@ const printToDom = (divId, textToPrint) => {
 };
 
 const createProjectCards = (array) => {
-  getProjects();
   let domString = '';
   array.forEach((element, i) => {
     domString += `<div class="card p-3" style="width: 35rem;" id=${i}>
@@ -31,8 +25,6 @@ const createProjectCards = (array) => {
       </div>
     </div>
   </div>
-  
-  
   <h5 class="card-title fs-2 text-center mb-4">${element.title}</h5>
                     <img src=${element.screenshot} class="card-img-top" alt="screenshot of a webpage">
                     <hr>
@@ -52,14 +44,12 @@ const createProjectCards = (array) => {
                       </div>
                     </div>
                   </div>`;
-                  if(element.available === true){printToDom('#projectsPage', domString);}
-                  
-  });
-  
-};
+                  if (element.available){printToDom('#projectsPage', domString);}
+    }
+  );};
+
 // Dynamically add technologies used based on the obj.technologiesUsed property in projects
 const addTechProjectCards = (array) => {
-  getProjects();
   let domString = '';
   for (let i=0; i < array.length; i++) {
     for (let j=0; j < array[i].technologiesUsed.length; j++) {
@@ -71,7 +61,6 @@ const addTechProjectCards = (array) => {
   }
   
 };
-
 const init = () => {
   createProjectCards(projects);
   addTechProjectCards(projects);
