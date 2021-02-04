@@ -1,5 +1,16 @@
-$primary-color: rgb(171, 175, 129);
-
+// Color palette start
+$primary-font: "Space Grotesk", sans-serif;
+$font-project-text: "Share Tech Mono", monospace;
+$font-project-text-secondary: "Exo", sans-serif;
+$primary-color-dark: #455a64;
+$primary-color: #607d8b;
+$primary-color-light: #cfd8dc;
+$primary-color-text: #ffffff;
+$accent-color: #009688;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #bdbdbd;
+// Color palette end
 html {
   height: 100%;
   margin: 0;
@@ -7,19 +18,31 @@ html {
   font-size: 10px;
 }
 body {
+  font-family: $primary-font;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: $primary-color;
+  color: #212121;
 }
 nav {
+  z-index: 1;
+  background-color: $divider-color;
+  color: $primary-color-text;
   height: 4.25em;
   padding: 0.75em;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid $accent-color;
   width: 100%;
   position: fixed;
   top: 0;
+  a {
+    color: $primary-color-light;
+  }
+  a:hover {
+    transition: 250ms;
+    color: $accent-color;
+  }
 }
 .navbar-myname {
   font-size: 2em;
@@ -119,8 +142,53 @@ h4 {
 }
 /* Project Cards CSS */
 .projects-page {
-  border: 1px solid red;
+  background-color: $primary-color-dark;
+  padding: 10px;
+  width: 100%;
+  // border: 1px solid red;
 }
 .card {
-  margin: 40em 0;
+  font-family: $font-project-text;
+  color: $primary-text-color;
+  box-shadow: $accent-color 0px 0px 20px;
+  background-color: $primary-color-light;
+  height: 50rem;
+  margin: 5em;
+  border-radius: 20px;
+  .card-text {
+    font-size: 30px;
+    font-family: $font-project-text-secondary;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+  .card-img-top {
+    height: 33%;
+    width: auto;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+  }
+  .foot-container {
+    max-height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    color: $primary-color-text;
+    background-color: $accent-color;
+    border-radius: 10px;
+  }
+  .btn:hover {
+    transition: 500ms;
+    background-color: darken($accent-color, $amount: 8%);
+  }
+  hr {
+    border: 1px $accent-color solid;
+  }
+  a {
+    color: $accent-color;
+    font-weight: 500;
+  }
+  a:hover {
+    transition: 500ms;
+    color: darken($color: $accent-color, $amount: 8%);
+  }
 }
