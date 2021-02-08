@@ -191,4 +191,8 @@ h4 {
     transition: 500ms;
     color: darken($color: $accent-color, $amount: 8%);
   }
+  .modal-image {
+    height: 50px;
+    width: 50px;
+  }
 }
