@@ -1,11 +1,11 @@
-const javascriptIcon = "<img class=\"modal-image\" src=\"../dist/assets/images/javascript-logo-8892AEFCAC-seeklogo.com.png\" alt=\"icon\">";
-const cssIcon = "<img class=\"modal-image\" src=\"../dist/assets/images/CSS3_logo_and_wordmark.svg.png\" alt=\"icon\">";
-const htmlIcon = "<img class=\"modal-image\" src=\"../dist/assets/images/240px-HTML5_logo_and_wordmark.svg.png\" alt=\"icon\">";
+const javascriptIcon = "<img class=\"modal-image\" src=\"./assets/images/javascript-logo-8892AEFCAC-seeklogo.com.png\" alt=\"icon\">";
+const cssIcon = "<img class=\"modal-image\" src=\"./assets/images/CSS3_logo_and_wordmark.svg.png\" alt=\"icon\">";
+const htmlIcon = "<img class=\"modal-image\" src=\"./assets/images/240px-HTML5_logo_and_wordmark.svg.png\" alt=\"icon\">";
 
 const projects = [
   {
     title: "COLORFLIPPER", 
-    screenshot: "../dist/assets/images/colorflipper.png", 
+    screenshot: "./assets/images/colorflipper.png", 
     description: "My first web app. A simple site where you choose random colors in two fun modes. This site was a great starting place for me to learn how to manipulate the DOM.", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: [javascriptIcon, htmlIcon, cssIcon],
     available: true,
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "PET ADOPTION", 
-    screenshot: "../dist/assets/images/pet-adoption-page.png", 
+    screenshot: "./assets/images/pet-adoption-page.png", 
     description: "A web app where you can view a long list of pets. You can also filter the pets by type or delete them if you wish. This site was for learning the D in CRUD.", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: [" HTML", " SASS", "JavaScript","Bootstrap"],
     available: true,
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "SORTING HAT", 
-    screenshot: "../dist/assets/images/hatsorting.png", 
+    screenshot: "./assets/images/hatsorting.png", 
     description: "My Q1 project. A website based in the potterverse where you can open a form and submit first year students names to see which house they get assigned to by the sorting hat. If you expel them they join the dark army!", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: ["HTML", "CSS", javascriptIcon, "Bootstrap"],
     available: true,
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: "SORTING HAT", 
-    screenshot: "../dist/assets/images/hatsorting.png", 
+    screenshot: "./assets/images/hatsorting.png", 
     description: "My Q1 project. A website based in the potterverse where you can open a form and submit first year students names to see which house they get assigned to by the sorting hat. If you expel them they join the dark army!", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     available: true,
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "SORTING HAT", 
-    screenshot: "../dist/assets/images/hatsorting.png", 
+    screenshot: "./assets/images/hatsorting.png", 
     description: "My Q1 project. A website based in the potterverse where you can open a form and submit first year students names to see which house they get assigned to by the sorting hat. If you expel them they join the dark army!", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: ["HTML", "CSS", "JavaScript", "Ruby", "React", "Jquery"],
     available: true,
