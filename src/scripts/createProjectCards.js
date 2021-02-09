@@ -1,13 +1,9 @@
-import {projects} from "./index.js";
-
-const printToDom = (divId, textToPrint) => {
-  const selectedDiv = document.querySelector(divId);
-  selectedDiv.innerHTML = textToPrint;
-};
+import {printToDom} from "./index.js";
 
 const createProjectCards = (array) => {
   let domString = '';
   array.forEach((element, i) => {
+    console.log(element.technologiesUsed);
     domString += `<div class="card p-3" style="width: 35rem;" id=${i}>
     <div class="modal fade" id="modal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -48,21 +44,4 @@ const createProjectCards = (array) => {
     }
   );};
 
-// Dynamically add technologies used based on the obj.technologiesUsed property in projects
-const addTechProjectCards = (array) => {
-  let domString = '';
-  for (let i=0; i < array.length; i++) {
-    for (let j=0; j < array[i].technologiesUsed.length; j++) {
-      domString += `<li class="list-group-item flex-fill text-center">${array[i].technologiesUsed[j]}</li>
-      `;
-    }
-    printToDom('#techList' + i , domString);
-    domString = '';
-  }
-  
-};
-const init = () => {
-  createProjectCards(projects);
-  addTechProjectCards(projects);
-};
-init();
+  export default createProjectCards;

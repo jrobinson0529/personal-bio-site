@@ -191,5 +191,9 @@ h4 {
   transition: 500ms;
   color: #006d63;
 }
+.card .modal-image {
+  height: 50px;
+  width: 50px;
+}
 
 /*# sourceMappingURL=main.css.map */
