@@ -2,9 +2,11 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    './src/scripts/projects.js',
+    './src/scripts/init.js',
+    './src/scripts/createProjectCards.js',
     './src/scripts/projectsData.js',
-    './src/scripts/index.js'
+    './src/scripts/index.js',
+    './src/scripts/printToDom.js',
   ],
   output: {
     filename: 'main.js',

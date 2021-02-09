@@ -1,9 +1,4 @@
-import {projects} from "./index.js";
-
-const printToDom = (divId, textToPrint) => {
-  const selectedDiv = document.querySelector(divId);
-  selectedDiv.innerHTML = textToPrint;
-};
+import {printToDom} from "./index.js";
 
 const createProjectCards = (array) => {
   let domString = '';
@@ -49,7 +44,4 @@ const createProjectCards = (array) => {
     }
   );};
 
-const init = () => {
-  createProjectCards(projects);
-};
-init();
+  export default createProjectCards;
